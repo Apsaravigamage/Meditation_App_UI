@@ -42,7 +42,7 @@ class BottomNavItem extends StatelessWidget {
   final String svgScr;
   final String title;
   final Function press;
-  final String isActive;
+  final bool isActive;
   const BottomNavItem({
     Key key, 
     this.svgScr, 
