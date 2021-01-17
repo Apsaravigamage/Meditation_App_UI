@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:matitation_app/constants.dart';
+import 'package:matitation_app/widgets/bottom_nav_bar.dart';
 import 'package:matitation_app/widgets/category_card.dart';
 
 void main() {
@@ -30,10 +31,7 @@ class HomeScreen extends StatelessWidget {
     var size = MediaQuery.of(context)
       .size; //this gonna give us total height and with of our device
     return Scaffold(
-      bottomNavigationBar: Container(
-        height: 70;
-        color: Colors.white,
-      ),
+      bottomNavigationBar: BottomNavBar(),
       body: Stack(
         children: <Widget>[
           Container( 
@@ -126,3 +124,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
